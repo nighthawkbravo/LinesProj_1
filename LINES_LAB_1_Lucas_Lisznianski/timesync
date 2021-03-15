@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Syncing time..."
+ntpdate pool.ntp.org
+echo "Time synced"

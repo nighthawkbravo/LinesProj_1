@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		printf "Downloading resource"
+		cd /root && /root/downloader.pl
+		echo "done."
+		;;
+	stop)
+		printf "Cleanup "
+		echo "done."
+		;;
+	restart)
+		sleep 1
+		;;
+	*)
+		echo "usage: $0 {start|stop|restart}"
+		;;
+esac
